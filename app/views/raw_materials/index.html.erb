@@ -1,0 +1,12 @@
+<% @categories.each do |category| %>
+  <div data-category="<%= category %>">
+    <h3><%= category %></h3>
+    <ul>
+      <% @raw_materials.each do |raw_material| %>
+        <% if raw_material.category == category %>
+          <li><%= raw_material.name %></li>
+        <% end%>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
