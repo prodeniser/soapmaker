@@ -1,3 +1,5 @@
-example_id                               | status | run_time     |
----------------------------------------- | ------ | ------------ |
-./spec/system/raw_materials_spec.rb[1:1] | passed | 1.04 seconds |
+example_id                                   | status | run_time        |
+-------------------------------------------- | ------ | --------------- |
+./spec/system/raw_materials_spec.rb[1:1]     | passed | 1.16 seconds    |
+./spec/system/raw_materials_spec.rb[1:2:1:1] | passed | 0.03938 seconds |
+./spec/system/raw_materials_spec.rb[1:2:2:1] | passed | 0.05617 seconds |
