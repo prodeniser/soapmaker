@@ -3,8 +3,11 @@ class RawMaterial < ApplicationRecord
     'Base Oils',
     'Essential Oils',
     'Lye',
-    'Liquids', 
+    'Liquids',
     'Colorants',
     'Additives',
   ]
+
+  validates :name, presence: true, uniqueness: true
+  validates_inclusion_of :category, in: CATEGORIES
 end

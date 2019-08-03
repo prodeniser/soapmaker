@@ -1,0 +1,6 @@
+<p><%= @raw_material.errors.full_messages.join(', ') %></p>
+<%= form_for @raw_material do |f| %>
+  <%= f.text_field :name %>
+  <%= f.select :category, RawMaterial::CATEGORIES %>
+  <%= f.submit 'Submit' %>
+<% end %>
