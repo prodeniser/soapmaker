@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_20_022004) do
+ActiveRecord::Schema.define(version: 2019_08_03_004541) do
 
   create_table "raw_materials", force: :cascade do |t|
-    t.string "name"
-    t.string "category"
+    t.string "name", null: false
+    t.string "category", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
